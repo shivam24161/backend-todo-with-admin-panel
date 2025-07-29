@@ -31,6 +31,6 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/superAdmin", superAdminRoutes);
 // middleware ends
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("server running at 3000")
 })
